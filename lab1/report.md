@@ -21,9 +21,9 @@ sudo apt-get update
 sudo apt install python3-pip
 sudo pip3 install ansible
 ```
-*тут будет картинка*
+![изображение](lab1/images/1. ansible.png)
 2. На VirtualBox установили CHR (RouterOS).
-*тут будет картинка*
+![изображение](lab1/images/1. ansible.png)
 3. Cоздали свой OpenVPN сервер.
 ```
 apt install openvpn-as
