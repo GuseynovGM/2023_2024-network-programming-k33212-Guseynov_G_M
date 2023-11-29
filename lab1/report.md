@@ -22,12 +22,12 @@ sudo apt install python3-pip
 sudo pip3 install ansible
 ```
 ![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/1.%20ansible.png)
-2. На VirtualBox установили CHR (RouterOS).
+
+2. На VirtualBox установили CHR (RouterOS). \
 ![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/2microtik.png)
-3. Cоздали свой OpenVPN сервер.
-```
-apt install openvpn-as
-```
+
+
+3. Cоздали свой OpenVPN сервер. \
 ![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/3.%20openvpn.png)
 ![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/4.%20openvpn.png)
 
@@ -48,14 +48,14 @@ apt install openvpn-as
 Добавили скачанный ранее профайл и импортировали сертификат: 
 
 ![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/9.%20cert.png)
-6. Создали OpenVPN интерфейс, чтобы поднять VPN туннель для связи с сервером:
+5. Создали OpenVPN интерфейс, чтобы поднять VPN туннель для связи с сервером:
 ![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/10.%20new%20interface.png)
 
-7. Проверили соединение: \
+6. Проверили соединение: \
 ![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/11.%20conected.png)
 
-8. В результате лабораторной работы была получена схема, представленная ниже.
-*тут будет картинка*
+7. В результате лабораторной работы была получена схема, представленная ниже.\
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/sch.jpg)
 
 ## Вывод
 В ходе работы научились развертывать виртуальные машины и системы контроля конфигураций Ansible, а также организовали собственный VPN сервер.
