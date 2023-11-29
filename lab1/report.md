@@ -28,30 +28,31 @@ sudo pip3 install ansible
 ```
 apt install openvpn-as
 ```
-![изображение]([https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/2.%20microtik.png](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/3.%20openvpn.png))
-![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/2.%20microtik.png)
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/3.%20openvpn.png)
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/4.%20openvpn.png)
 
 4. Задали настройки OpenVPN сервера: \
-*тут будет 2 картинки*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/5.%20TCP.png)
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/6.%20TLS%20off.png)
 
 Создали нового пользователя и разрешили атоматический вход:
 
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/7.%20user%20add.png)
 
 
 Создали новый профайл и скачали его:
 
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/8.%20profiles.png)
 
-*тут будет картинка*
 
 Добавили скачанный ранее профайл и импортировали сертификат: 
 
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/9.%20cert.png)
 6. Создали OpenVPN интерфейс, чтобы поднять VPN туннель для связи с сервером:
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/10.%20new%20interface.png)
 
 7. Проверили соединение: \
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/11.%20conected.png)
 
 8. В результате лабораторной работы была получена схема, представленная ниже.
 *тут будет картинка*
