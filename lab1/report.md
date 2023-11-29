@@ -21,15 +21,15 @@ sudo apt-get update
 sudo apt install python3-pip
 sudo pip3 install ansible
 ```
-![изображение](lab1/images/1. ansible.png)
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/1.%20ansible.png)
 2. На VirtualBox установили CHR (RouterOS).
-![изображение](lab1/images/1. ansible.png)
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/2.%20microtik.png)
 3. Cоздали свой OpenVPN сервер.
 ```
 apt install openvpn-as
 ```
-*тут будет 2 картинки*
-
+![изображение]([https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/2.%20microtik.png](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/3.%20openvpn.png))
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/2.%20microtik.png)
 
 4. Задали настройки OpenVPN сервера: \
 *тут будет 2 картинки*
