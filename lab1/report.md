@@ -23,7 +23,7 @@ sudo pip3 install ansible
 ```
 ![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/1.%20ansible.png)
 2. На VirtualBox установили CHR (RouterOS).
-![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/2.%20microtik.png)
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab1/images/2microtik.png)
 3. Cоздали свой OpenVPN сервер.
 ```
 apt install openvpn-as
