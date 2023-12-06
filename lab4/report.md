@@ -30,9 +30,9 @@ Date of finished: 07.12.2023
 
 Когда машина перезагрузилась, появился быть графический настольный компьютер с предустановленным необходимым программным обеспечением. На виртуальной машине есть две учетные записи пользователей: vagrant (пароль vagrant) и p4 (пароль p4). Учетная запись p4 — это та учетная запись, которую мы будем использовать.
 
-*тут юудет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab4/images/1.png)
 
-2. Зашли под учетной записью p4 и  запустили mininet:
+2. Зашли под учетной записью p4 и  запустили Mininet:
    
 ```make run```
 
@@ -40,12 +40,13 @@ Date of finished: 07.12.2023
 
 ```mininet> h1 ping h2```
 
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab4/images/2.png)
 
 
 Хосты не пингуются, т. к. по умолчанию все пакеты сбрасываются.
 
 Вышли из Mininet и затем остановили его:
+
 ```make stop```
 
 3. Изменим файл ```basic.p4```, котрый содержит скелет программы P4, в котором ключевые фрагменты логики заменены ```TODO``` комментариями.
@@ -134,11 +135,11 @@ control MyDeparser(packet_out packet, in headers hdr) {
 ```
 4. Снова запустили решение как в Шаге 2. На этот раз успешно выполнили проверку связи между любыми хостами в топологии.
 
-*Тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab4/images/3.png)
 
 5. Схема связи
 
-Тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab4/images/schema3.drawio.png)
 
 
 ### Basic Tunneling
@@ -149,7 +150,7 @@ control MyDeparser(packet_out packet, in headers hdr) {
 Изменим файл ```basic_tunnel.p4```.
 
 
-Обновили парсер чтобы он извлекал либо myTunnelзаголовок, либо ipv4заголовок на основе etherTypeполя в заголовке Ethernet. 
+Обновили парсер чтобы он извлекал либо ```myTunnel``` заголовок, либо ```ipv4``` заголовок на основе ```etherType ``` поля в заголовке Ethernet. 
 ```p4
 state parse_ethernet {
     packet.extract(hdr.ethernet);
@@ -219,15 +220,20 @@ control MyDeparser(packet_out packet, in headers hdr) {
 ```
 2. Как в предыдущем задании, запустили командную строку Mininet.
 Открыли два терминала для h1и h2 соответственно:
+
 ```mininet> xterm h1 h2```
-3. Каждый хост включает в себя небольшой клиент и сервер обмена сообщениями на базе Python. В h2xterm запустили сервер:
+
+4. Каждый хост включает в себя небольшой клиент и сервер обмена сообщениями на базе Python. В h2xterm запустили сервер:
+   
 ```./receive.py```
+
 Сначала  протестируем без туннелирования. В h1xterm отправили сообщение по адресу h2:
+
 ```./send.py 10.0.2.2 "P4 is cool"```
 
 Пакет с переданным сообщением дошел до адресата.
 
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab4/images/4.png)
 
 4. Теперь тестируем с туннелированием. В h1xterm отправили сообщение по адресу h2:
 
@@ -235,18 +241,19 @@ control MyDeparser(packet_out packet, in headers hdr) {
 
 Пакет должен получен в h2.
 
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab4/images/5.png)
 
 Теперь отправили пакет на адрес h3, указав данные для заголовка туннелирования dst_id для h2:
+
 ```./send.py 10.0.3.3 "P4 is cool" --dst_id 2```
 
-Пакет получен по адресу h2, даже если этот IP-адрес является адресом h3. Это связано с тем, что коммутатор больше не использует заголовок IP для маршрутизации, когда заголовок ```MyTunnel``` находится в пакете.
+Пакет получен по адресу h2, даже если этот IP-адрес является адресом h3. Это связано с тем, что коммутатор больше не использует заголовок IP для маршрутизации, когда заголовок ```myTunnel``` находится в пакете.
 
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab4/images/6.png)
 
 5. Схема связи
 
-*тут будет картинка*
+![изображение](https://github.com/GuseynovGM/2023_2024-network-programming-k33212-Guseynov_G_M/blob/main/lab4/images/schema4.drawio.png)
 
 ## Вывод
 В ходе работы был изучен синтаксис языка программирования P4 и выполнить 2 обучающих задания от Open network foundation для ознакомления на практике с P4.
